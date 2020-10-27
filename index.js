@@ -29,6 +29,7 @@ async function handleRequest(request) {
 	if (response.ok) {
 		html_text = await response.text()
 	}
+	
 
 	return new Response(html_text, {
 		status: 200,
