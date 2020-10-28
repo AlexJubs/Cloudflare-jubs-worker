@@ -44,7 +44,12 @@ class ElementHandler {
   	// if the element's style is 'display: none', then we want to change that
     if (element.getAttribute("style") == "display: none") {
     	console.log("display type is none, lets remove that")
-    	
+    	element.removeAttribute("style")
+    }
+
+    if (element.getAttribute("id") == "avatar") {
+    	console.log("here is where my avatar should go")
+    	element.setAttribute("src","https://user-images.githubusercontent.com/41933907/97404889-2c911500-18cd-11eb-95f8-f7334b806df5.jpg")
     }
   }
 }
